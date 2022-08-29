@@ -1,0 +1,8 @@
+<p>using-pipes works!</p>
+<p>Displaying 3.1459 as: {{3.1459 | number:'3.1-2'}}</p>
+<p>[1,2,3,4,5] Get only 2,3 : {{[1,2,33,50,5,6] | slice : 1:2}}</p>
+<p>{{5000 | currency:'Rs'}}</p>
+<p>Using custom pipes</p>
+<input type="text" [(ngModel)]="goodword"/>
+<span>{{goodword |isBlackListed}}</span>
+<span class='notification'> {{goodword |isBlackListed}}</span>

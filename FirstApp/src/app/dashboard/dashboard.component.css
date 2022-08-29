@@ -1,0 +1,9 @@
+.element {
+    font-size: medium;
+    font-style: oblique;
+    border-color: yellowgreen;
+    border-block-style: revert;
+    border-style: outset;
+    border-image: skyblue;
+    font-family: unset;
+}

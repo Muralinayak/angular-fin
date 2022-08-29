@@ -1,0 +1,17 @@
+<p>using-Https work..!</p>
+<button (click)="GetData()">GetData</button>
+<button (click)="GetMovies()">GetMovies data from .net webapi</button>
+
+<hr/>
+    <ul>
+        <li *ngFor="let post of propData">
+        {{post.userId}} .{{post.id}}.{{post.title}}
+        </li>
+    </ul>
+<h3>getting data from .Net webapi</h3>
+<hr/>
+<ul>
+    <li *ngFor="let movie of movieData">
+  {{movie.name}}
+    </li>
+</ul>

@@ -1,0 +1,44 @@
+<p>dashboard workd...!</p>
+<input type="text" value="" #pName />
+<input type="number" #pAge />
+<input type="email" #pEmail />
+
+
+s
+
+
+<hr/>
+<button (click)="NavigateTo()" >Navigate to login</button>
+<button (click)="AddPerson(pName.value,pAge.value,pEmail.value)"  (dblclick)="Donttroubleme()">Add person</button>
+<button (click)="Getall()">Get All Persons</button>
+<button class="element" onclick="alert('Js event on mouseover fired!')"
+(mouseover)="ChangeColor(funny)"
+(mouseover)="OnMouseOut(funny)">Do something</button>
+<button class="element" (mouseover)="ChangeColor(funny)">Do something Funnt...</button>
+<br>
+
+
+<div  #funny style ="width:300px; height:300px;">
+
+
+    content inside the div tag
+</div>
+
+
+
+
+<ul>
+    <li *ngFor="let person of people ">{{person.Name}} is {{person.Age}} yrs old. Contact :</li>
+</ul>
+<hr/>
+<h3>BindingList of Images </h3>
+<ul>
+    <li *ngFor="let single of Imageurls">
+<div>
+    <img [src]="single" style="border-style:solid;border-width:1px"/>
+    <hr/>
+    <p>this deription :this is a smiling world</p>
+</div>
+
+    </li>
+</ul>

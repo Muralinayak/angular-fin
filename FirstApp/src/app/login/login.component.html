@@ -1,0 +1,23 @@
+<input type ="text" [(ngModel)]="username" placeholder ="enter user name " style ="display : block;"/>
+<span>Printing username and its chnages :{{username}}</span>
+<input type="password" [(ngModel)] ="password" placeholder="enter password " style="display: block;"/>
+<span>Printing password and its chnages :{{password }}</span>
+<hr/>
+<button (click)="DoLogin()">login</button>
+<button (click)="DoCancel()">Cancel</button>
+<input type="text" [value]="status">
+<hr/>
+
+
+<div *ngIf="status == 'Login successfull !'; then success else failed "></div>
+<ng-template #success>
+<span style="color :green;background-color:lightgreen;">{{status}}</span>
+</ng-template>
+
+<ng-template #failed>
+
+<span style="color :red ;background-color:blue;">{{status}}</span>
+</ng-template>
+<div ngIf="status == login failes!"; else failed>
+    Login succeeded!
+</div>

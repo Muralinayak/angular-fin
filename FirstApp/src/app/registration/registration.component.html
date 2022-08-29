@@ -1,0 +1,17 @@
+<input type ="text" [(ngModel)] ="username" placeholder ="username " style ="display:block;"/>
+<span>Enter the correct username </span>
+<input type ="password" [(ngModel)]="password" placeholder ="password " style ="display:block;"/>
+<span>Enter the correct password </span>
+<input type =" password"[(ngModel)]="confirmpassword" placeholder ="confirm password " style ="display:block;"/>
+<span>Confirm the password </span>
+<input type="email" placeholder="enter mail id"  style ="display:block;"/>
+<span>Enter the correct mail id </span>
+<input type ="date" [(ngModel)] ="Dateofbirth" placeholder="Date of birth "/>
+<span>Your DOB is: {{Dateofbirth}}</span>
+<hr/>
+
+<button (click)="register()" >Register</button>
+<span>{{status}}</span>
+
+
+
